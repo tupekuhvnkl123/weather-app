@@ -1,0 +1,24 @@
+.searchForm {
+  width: 21rem;
+
+  .textField {
+    border-radius: 10px;
+    background-color: rgb(89, 89, 89, 0.5);
+    * {
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 1) !important;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .searchForm {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .searchForm {
+    width: 90vw;
+  }
+}

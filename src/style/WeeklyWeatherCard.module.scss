@@ -1,0 +1,158 @@
+.weatherItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0.7rem;
+  cursor: pointer;
+}
+
+.chosen {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.day {
+  font-weight: 400;
+}
+.date {
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.icon_degrees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .separateLine {
+    display: none;
+  }
+  .icon {
+    margin-top: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: 150%;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1300px) {
+  .weatherItem {
+    padding: 1rem 0.5rem;
+  }
+
+  .day {
+    font-size: 1.1rem;
+  }
+  .date {
+    font-size: 0.8rem;
+  }
+  .icon_degrees {
+    .icon {
+      margin-top: 1.3rem;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .weatherItem {
+    padding: 1rem 0.4rem;
+  }
+
+  .day {
+    font-size: 1rem;
+  }
+  .date {
+    font-size: 0.7rem;
+  }
+  .icon_degrees {
+    .icon {
+      margin-top: 1rem;
+      width: 3.1rem;
+      height: 3.1rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .weatherItem {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.7rem;
+    padding: 0.5rem;
+  }
+  .day {
+    font-size: 1.2rem;
+  }
+  .date {
+    display: none;
+  }
+  .icon_degrees {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 7rem;
+
+    .separateLine {
+      display: block;
+      height: 2.5rem;
+      width: 1px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .icon {
+      margin-top: 0;
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+    h3 {
+      font-size: 1.7rem;
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .weatherItem {
+    margin-bottom: 0.5rem;
+  }
+  .day {
+    font-size: 1rem;
+  }
+
+  .icon_degrees {
+    width: 5.5rem;
+
+    .separateLine {
+      height: 2.1rem;
+    }
+
+    .icon {
+      width: 2rem;
+      height: 2rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+}

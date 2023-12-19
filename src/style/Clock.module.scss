@@ -1,0 +1,156 @@
+.clockContainer {
+  position: absolute;
+  top: 4rem;
+  left: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.clock {
+  position: relative;
+  width: 150px;
+  aspect-ratio: 1/1;
+  background-color: rgb(89, 89, 89, 0.5);
+  border-radius: 100%;
+  box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.25);
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #8d7aff;
+    border-radius: 50%;
+    width: 7px;
+    aspect-ratio: 1/1;
+    top: 47%;
+    left: 48%;
+    z-index: 10;
+  }
+
+  .hourDial {
+    position: absolute;
+    background-color: rgba(255, 255, 255);
+    transform-origin: bottom;
+    width: 2px;
+    height: 2.5rem;
+    bottom: 50.5%;
+    z-index: 9;
+    left: 49.7%;
+  }
+  .minuteDial {
+    position: absolute;
+    background-color: rgba(255, 255, 255);
+    transform-origin: bottom;
+    width: 2px;
+    height: 1.65rem;
+    bottom: 50.5%;
+    z-index: 9;
+    left: 49.7%;
+  }
+
+  .line {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+  }
+
+  .twelveLine {
+    width: 1px;
+    height: 1rem;
+    top: 7%;
+    right: 49.5%;
+  }
+  .threeLine {
+    top: 49%;
+    right: 7%;
+    width: 1rem;
+    height: 1px;
+  }
+  .sixLine {
+    width: 1px;
+    height: 1rem;
+    bottom: 7%;
+    right: 49.5%;
+  }
+  .nineLine {
+    top: 49%;
+    left: 7%;
+    width: 1rem;
+    height: 1px;
+  }
+}
+
+.nightClock {
+  background-color: rgb(229, 234, 255, 0.85);
+  .hourDial {
+    background-color: rgb(0, 0, 0);
+  }
+  .minuteDial {
+    background-color: rgb(0, 0, 0);
+  }
+  .line {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.time {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  .number {
+    color: rgb(89, 89, 89, 0.8);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .am_pm {
+    color: rgb(89, 89, 89, 0.8);
+    margin-top: -0.6rem;
+    margin-left: 0.3rem;
+  }
+}
+
+.nightTime {
+  .number {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .am_pm {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 1400px) {
+  .clockContainer {
+    left: 5rem;
+  }
+}
+@media (max-width: 1150px) {
+  .clockContainer {
+    top: 3rem;
+    left: 4rem;
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1150px) {
+  .clock {
+    display: none;
+  }
+
+  .time {
+    margin-top: -1rem;
+    margin-left: -1rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .clockContainer {
+    left: 3.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .clockContainer {
+    left: 2rem;
+  }
+}

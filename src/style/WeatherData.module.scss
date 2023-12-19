@@ -1,0 +1,144 @@
+.weatherDataContainer {
+  width: 40rem;
+  background-color: rgb(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.day_date_city {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day_date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    opacity: 0.7;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.city {
+  margin-top: 0.5rem;
+  h2 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}
+.details {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+.summary {
+  margin-top: 1.5rem;
+  text-align: center;
+  p {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1200px) {
+  .weatherDataContainer {
+    width: 35rem;
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .weatherDataContainer {
+    width: 30rem;
+    margin-top: 3rem;
+    padding: 1.2rem;
+    padding-bottom: 2rem;
+  }
+
+  .day_date_city {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .day_date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .city {
+    margin-top: 0;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .details {
+    margin-top: 2.3rem;
+  }
+  .summary {
+    margin-top: 2.3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .weatherDataContainer {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 535px) {
+  .weatherDataContainer {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .details {
+    margin-top: 2rem;
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .summary p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .city h2 {
+    font-size: 1.2rem;
+  }
+  .day_date p {
+    font-size: 0.85rem;
+  }
+  .details {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .summary p {
+    font-size: 0.8rem;
+  }
+}

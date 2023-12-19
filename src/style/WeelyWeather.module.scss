@@ -1,0 +1,59 @@
+.weelyWeatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+.separateLine {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 0.1px;
+}
+.weeklyWeatherList {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  padding: 0 4rem;
+}
+
+@media (max-width: 1300px) {
+  .weeklyWeatherList {
+    width: 90vw;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .weeklyWeatherList {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .separateLine {
+    margin-top: 0.9rem;
+  }
+  .weeklyWeatherList {
+    margin-top: 1.6rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .weeklyWeatherList {
+    padding: 0 0.5rem;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: scroll;
+    max-height: 13rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .weeklyWeatherList {
+    max-height: 10rem;
+  }
+}

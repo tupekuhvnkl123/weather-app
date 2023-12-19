@@ -1,0 +1,38 @@
+.degreesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  span {
+    font-size: 5.5rem;
+    font-weight: 200;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: -1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .degreesContainer {
+    margin-top: 2rem;
+    span {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .degreesContainer {
+    margin-top: 1.8rem;
+    span {
+      font-size: 4.5rem;
+    }
+    h3 {
+      margin-left: -1rem;
+      font-size: 1.3rem;
+    }
+  }
+}
